@@ -18,7 +18,7 @@ galleryItems.forEach((item) => {
   );
 });
 
-document.querySelector(".gallery").onclick = (event) => {
+galleryEL.onclick = (event) => {
   event.preventDefault();
   const instance = basicLightbox.create(`
 		<img src="${event.target.dataset.source}">
